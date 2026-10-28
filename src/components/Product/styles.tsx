@@ -10,6 +10,7 @@ export const Card = styled(Link)`
   position: relative;
   text-decoration: none;
   color: ${cores.branca};
+
   display: block;
 
   img {
@@ -31,6 +32,7 @@ export const Titulo = styled.h3`
   margin-top: 16px;
   margin-bottom: 8px;
 `
+
 export const Descricao = styled.p`
   font-size: 14px;
   line-height: 22px;
