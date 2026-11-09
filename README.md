@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Eplay - E-commerce de Games 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é mais um projeto prático desenvolvido para o bootcamp da EBAC. O objetivo desta aplicação é aplicar conceitos avançados de React, criando um e-commerce de jogos digitais completo e funcional, com foco em integração de APIs, gerenciamento de estado global e estilização componentizada.
 
-## Available Scripts
+### 🚀 Funcionalidades
 
-In the project directory, you can run:
+A aplicação consiste em uma loja virtual completa onde o usuário pode explorar, adicionar ao carrinho e comprar jogos. O fluxo da aplicação abrange as seguintes etapas:
 
-### `npm start`
+- **Catálogo de Jogos:** Listagem dinâmica de jogos consumidos via API, organizados por categorias (Lançamentos, Promoções, Ação, RPG, etc.).
+- **Detalhes do Produto:** Página dedicada para cada jogo, exibindo informações detalhadas, sinopse, galeria de mídias, preço e especificações de sistema.
+- **Carrinho de Compras:** Sistema de adição e remoção de jogos, com cálculo automático do valor total da compra.
+- **Checkout:** Fluxo de compra por etapas integrando formulários para dados de cobrança, endereço de entrega e informações de pagamento (Boleto ou Cartão de Crédito).
+- **Confirmação:** Tela de sucesso gerada após a comunicação com a API, retornando o ID (código) do pedido finalizado.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🛠 Tecnologias Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O projeto foi construído utilizando as seguintes ferramentas e bibliotecas:
 
-### `npm test`
+- **React:** Biblioteca principal para a construção da interface de usuário e gerenciamento de rotas (React Router DOM).
+- **Redux (Redux Toolkit & RTK Query):** Responsável pelo gerenciamento do estado global do carrinho de compras e pelo consumo eficiente da API REST, lidando com chamadas assíncronas (queries e mutations) e cache.
+- **Formik & Yup:** Utilizados em conjunto no fluxo de checkout para construir o formulário, gerenciar seus estados e aplicar validações rigorosas (campos obrigatórios, quantidade de caracteres, etc.) antes do envio dos dados.
+- **Styled Components:** Biblioteca de CSS-in-JS utilizada para a estilização isolada e dinâmica dos componentes.
+- **TypeScript:** Utilizado para garantir a tipagem estática dos dados recebidos da API (produtos, pedidos) e das propriedades dos componentes, evitando erros em tempo de execução.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ⚙️ Como executar o projeto na sua máquina
 
-### `npm run build`
+Certifique-se de ter o Node.js instalado. Em seguida, siga o passo a passo abaixo no seu terminal:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone este repositório:
+```bash
+# 1. Clone este repositório
+git clone [https://github.com/VitorV9/eplay.git](https://github.com/VitorV9/eplay.git)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 2. Acesse a pasta do projeto
+cd eplay
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 3. Instale as dependências
+npm install
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 4. Inicie o servidor de desenvolvimento
+npm start
