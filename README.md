@@ -29,7 +29,7 @@ Certifique-se de ter o Node.js instalado. Em seguida, siga o passo a passo abaix
 1. Clone este repositório:
 ```bash
 # 1. Clone este repositório
-git clone [https://github.com/VitorV9/eplay.git](https://github.com/VitorV9/eplay.git)
+git clone [https://github.com/VitorV9/eplay.git]
 
 # 2. Acesse a pasta do projeto
 cd eplay
